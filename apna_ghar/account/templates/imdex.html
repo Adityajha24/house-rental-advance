@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static 'style (2).css' %}">
+
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div class="form">
+        <div class="design">
+            <div class="round point"></div>
+            <div class="btns">
+                <a href="imdex.html" class="button">LOGIN</a>
+                <hr>
+                <a href="signup.html" class="button">SIGNUP</a>
+
+
+            </div>
+        </div>
+        <div class="box">
+            <div class="login">
+                <form action="">
+                    <h3>LOGIN</h3>
+                    <div class="login_field">
+                        <i class="bi bi-envelope-fill"></i>
+                        <input type="text" class="login_input" placeholder="user name / Email">
+                    </div>
+                    <div class="login_field">
+                        <i class="bi bi-shield-lock-fill"></i>
+                        <input type="password" class="login_input" placeholder="password">
+                    </div>
+                    <button>Log In Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="login (1).js"></script>
+</body>
+
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="media.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h4><i class="bi bi-house"></i>APNA GHAR</h4>
+            <div class="right_bx">
+                <ul>
+
+                    <li><a href="MINOR.html">Home</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li> <a href="#">List Your Property</a></li>
+
+                </ul>
+                <div class="account_bx">
+                    <button class="ani" onclick=window.location.href="imdex.html">
+                        <i class="bi bi-app-indicator"></i></button>
+
+                    <i class="bi bi-person-fill" onclick="toggleMenu()"></i>
+
+                    <div class="sub-menu_wrap" id="subMenu">
+                        <div class="sub-menu">
+                            <div class="user-info">
+
+                                <h2>Profile</h2>
+
+                            </div>
+                            <hr>
+                            <a href="imdex.html" class="sub-menu-link">
+
+                                <p><i class="bi bi-person-circle"></i> Login/SignUp</p>
+                            </a>
+
+                            <a href="property.html" class="sub-menu-link">
+                                <p> <i class="bi bi-house-heart-fill"></i> Best-Ghar</p>
+
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <p><i class="bi bi-file-earmark"></i> RentAgreement</p>
+
+                            </a>
+
+                            <a href="furniture.html" class="sub-menu-link">
+                                <p><i class="bi bi-box-seam"></i> Rent-Funiture</p>
+
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <p><i class="bi bi-box-seam"></i> ContactUs</p>
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+        </nav>
+        <script>
+            let subMenu = document.getElementById("subMenu");
+
+            function toggleMenu() {
+                subMenu.classList.toggle("open-menu");
+            }
+        </script>
+        <div class="content">
+            <div class="cont_bx">
+                <h1>Modern<br> House </h1>
+                <p>3 Bedroom,1 Kitchen, 2 Bathroom</p>
+
+                <div class="weather">
+                    <h6>42 C <span>Very Hot</span></h6>
+                </div>
+                <div class="btns_cont">
+                    <i class="bi bi-arrow-left" id="btn_left"></i>
+                    <i class="bi bi-arrow-right" id="btn_right"></i>
+                </div>
+
+                <div class="images_bx">
+                    <div class="card">
+                        <img src="h2.jpg" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="h2.jpg" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="h2.jpg" alt="">
+                        <h6 id="h6">+6</h6>
+                    </div>
+
+                </div>
+
+
+                <div class="choose_bx">
+                    <div class="stay_bx">
+                        <button><i class="bi bi-house-door-fill"></i></button>
+                        <button><i class="bi bi-star-fill"></i></button>
+                        <button><i class="bi bi-tv-fill"></i></button>
+                    </div>
+                    <div class="select">
+                        <div class="card">
+                            <h5>City</h5>
+                            <input type="text" value="Indore">
+                            <input type="text" value="India">
+                        </div>
+                        <div class="card">
+                            <h5>People</h5>
+                            <input type="text" value="4 People" id="people">
+                            <button id="people_less">Less</button>
+                            <button id="people_more">More</button>
+                        </div>
+                        <div class="card">
+                            <div class="left_box">
+                                <h5>CHECK IN</h5>
+                                <div class="date">
+                                    <h3 id="checkin_data">Tue,08 Nov</h3>
+                                    <input type="date" id="checkin" value="2022-09-28">
+                                    <i class="bi bi-calendar2-week-fill"></i>
+                                </div>
+                                <button id="checkin_less">Less</button>
+                                <button id="checkin_more">More</button>
+                            </div>
+                            <div class="right_box">
+                                <h5>CHECK OUT</h5>
+                                <div class="date">
+                                    <h3 id="checkout_data">Wed,09 Nov</h3>
+                                    <input type="date" id="checkout" value="2022-09-28">
+                                    <i class="bi bi-calendar2-week-fill"></i>
+                                </div>
+                                <button id="checkout_less">Less</button>
+                                <button id="checkout_more">More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="map">
+        <div class="address_bx">
+            <div class="location_bx">
+                <h6>location</h6>
+                <h4>Indore</h4>
+                <i class="bi bi-fullscreen-exit"></i>
+            </div>
+        </div>
+        <iframe src="https://my.atlistmaps.com/map/ffccda34-0e5a-43fb-845f-fa9de521d6bf" allow="geolocation" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+    <div class="home">
+        <div class="tittle_button">
+            <h2>Explore more houses</h2>
+            <button>See All <i class="bi bi-arrow-right"></i></button>
+        </div>
+
+        <div class="home_bx">
+            <div class="cards">
+                <img src="indore pic 2.jpeg.jpg" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Indore</h4>
+                        <p>India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="Bhopal.jpg" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Bhopal</h4>
+                        <p>India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="ujjain.jpg" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Ujjain</h4>
+                        <p>India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="dewas.jpg" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Dewas</h4>
+                        <p>India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="product1" class="section-p1">
+        <h2>Best Ghar</h2>
+        <hr>
+        <p>In Indore</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="Hm_img/4.webp" alt="">
+                <div class="des">
+                    <span>Vijay nagar,Indore</span>
+                    <h5>3 Bhk</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rs.15000</h4>
+                    <!--a href="#"><button class="ani" onclick=window.location.href="#" -->
+                    <a href="#"> <i class="bi bi-cart-check cart"></i></a>
+                    </button>
+                </div>
+
+            </div>
+            <div class="pro">
+                <img src="Hm_img/2.webp" alt="">
+                <div class="des">
+                    <span>Vijay nagar,Indore</span>
+                    <h5>3 Bhk</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rs.15000</h4>
+                    <a href="#"> <i class="bi bi-cart-check cart"></i></a>
+                </div>
+
+            </div>
+            <div class="pro">
+                <img src="Hm_img/3.webp" alt="">
+                <div class="des">
+                    <span>Vijay nagar,Indore</span>
+                    <h5>3 Bhk</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rs.15000</h4>
+                    <a href="#"><i class="bi bi-cart-check cart"></i></a>
+                </div>
+
+            </div>
+            <div class="pro">
+                <img src="Hm_img/2.webp" alt="">
+                <div class="des">
+                    <span>Vijay nagar,Indore</span>
+                    <h5>3 Bhk</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+                    <h4>Rs.15000</h4>
+                    <a href="#"><i class="bi bi-cart-check cart"></i></a>
+                </div>
+
+            </div>
+            <div class="pro">
+                <img src="Hm_img/6.jpg" alt="">
+                <div class="des">
+                    <span>Vijay nagar,Indore</span>
+                    <h5>3 Bhk</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rs.15000</h4>
+                    <a href="#"><i class="bi bi-cart-check cart"></i></a>
+                </div>
+
+            </div>
+            <div class="pro">
+                <img src="Hm_img/3_bhk_independent_house_in_rachna_nagar_for_rent_bhopal_the_reference_number_is_8243_4590008655036491160.jpg" alt="">
+                <div class="des">
+                    <span>Vijay nagar,Indore</span>
+                    <h5>3 Bhk</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rs.15000</h4>
+                    <a href="#"><i class="bi bi-cart-check cart"></i></a>
+                </div>
+
+            </div>
+            <div class="pro">
+                <img src="Hm_img/images (7).jpeg.jpg" alt="">
+                <div class="des">
+                    <span>Vijay nagar,Indore</span>
+                    <h5>3 Bhk</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rs.15000</h4>
+                    <a href="#"><i class="bi bi-cart-check cart"></i></a>
+                </div>
+
+            </div>
+            <div class="pro">
+                <img src="a3.jpeg" alt="">
+                <div class="des">
+                    <span>Vijay nagar,Indore</span>
+                    <h5>3 Bhk</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rs.15000</h4>
+                    <a href="#"><i class="bi bi-cart-check cart"></i></a>
+                </div>
+
+            </div>
+            <div class="pro">
+                <img src="a3.jpeg" alt="">
+                <div class="des">
+                    <span>Vijay nagar,Indore</span>
+                    <h5>3 Bhk</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rs.15000</h4>
+                    <a href="#"><i class="bi bi-cart-check cart"></i></a>
+                </div>
+
+            </div>
+            <div class="pro">
+                <img src="a3.jpeg" alt="">
+                <div class="des">
+                    <span>Vijay nagar,Indore</span>
+                    <h5>3 Bhk</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rs.15000</h4>
+                    <a href="#"><i class="bi bi-cart-check cart"></i></a>
+                </div>
+
+            </div>
+            <div class="pro">
+                <img src="a3.jpeg" alt="">
+                <div class="des">
+                    <span>Vijay nagar,Indore</span>
+                    <h5>3 Bhk</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rs.15000</h4>
+                    <a href="#"><i class="bi bi-cart-check cart"></i></a>
+                </div>
+
+            </div>
+            <div class="pro">
+                <img src="a3.jpeg" alt="">
+                <div class="des">
+                    <span>Vijay nagar,Indore</span>
+                    <h5>3 Bhk</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Rs.15000</h4>
+                    <a href="#"><i class="bi bi-cart-check cart"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <h2>Our Service</h2>
+        <hr>
+        <div class="box">
+            <div class="img_bx">
+                <img src="rent2.jpeg" alt="">
+            </div>
+            <div class="cont_box">
+                <h6><span>OUR SERVICE</span></h6>
+                <h1>Comfort is our <br>Top priority for you</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iure placeat quasi, qui sed nihil distinctio accusamus numquam eligendi perspiciatis!</p>
+                <ul>
+                    <li>Pramium nantinal markating</li>
+                    <li>Maneged Viowing</li>
+                    <li>Frco, no obligation valuctions</li>
+                    <li>Local area knowledge</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h4><i class="bi bi-house-door-fill"></i>APNA GHAR</h4>
+    </footer>
+    <script src="app.js">
+    </script>
+</body>
+
+</html>
